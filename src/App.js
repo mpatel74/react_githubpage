@@ -74,7 +74,7 @@ function App() {
 
   return (
       <>
-        <img src={avatar} alt="No Image Found!"/>
+        <img src={avatar}/>
         <h1 className="name">{name}</h1>
 
         <header id="header" className="headertemp">
