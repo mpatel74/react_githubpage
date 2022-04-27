@@ -1,38 +1,131 @@
-.App {
+
+.headertemp{
+  padding: 150px;
+  background: #c2c0c0;
+}
+
+.logo{
+  position: absolute;
+  color:black;
+  font-size: 30px;
+  top:15px;
+  left:70px;
+  font-family: Verdana, sans-serif;
+  font-weight: bold;
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+
+.search{
+  position: absolute;
+  top:15px;
+  right:50px;
+}
+
+.input{
+  background-color: white;
+  color: #888585;
+  border: none;
+  padding: 10px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right:5px;
+}
+
+.button{
+  background-color: #e7e7e7;
+  color: black;
+  border: none;
+  padding: 10px;
   text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img{
+  position: absolute;
+  border-radius: 50%;
+  width: 200px;
+  padding: 70px;
+  margin-top: 100px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.name{
+  position: absolute;
+  margin-left: 375px;
+  margin-top: 250px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  overflow: hidden;
+  width: 100%;
+  height: 5rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-bottom: solid #c2c0c0;
+
 }
 
-.App-link {
-  color: #61dafb;
+.header ul {
+  margin-left: 300px;
+  list-style: none;
+  padding: 0;
+  display: inline-flex;
+  align-items: baseline;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header li {
+  margin-left: 3rem;
+  width: 100px;
+  align-items: baseline;
+  padding: 30px;
+  font-weight: bold;
+}
+
+.header a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.header a:hover,
+.header ul li:hover{
+  background: #f1f1f1;
+  border-radius: 4px;
+  padding-block: 20px;
+}
+
+.header a.active,
+.header ul li.active{
+  background: #f1f1f1;
+  border-radius: 4px;
+  padding-block: 20px;
+  font-weight: bold;
+}
+
+.about {
+  background-color: #ececec;
+  color: black;
+  display: table;
+  align-items: center;
+  text-align: left;
+  font-family: Verdana, sans-serif;
+  font-weight: normal;
+  margin-left:auto;
+  margin-right: auto;
+  width: 700px;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding-left: 15px;
+  word-wrap: break-word;
 }
