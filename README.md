@@ -1,4 +1,3 @@
-You might need to run `npm install` first
 
 once the installation 
 # Getting Started with Create React App
@@ -6,6 +5,8 @@ once the installation
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
+You might need to run `npm install` first
+
 
 In the project directory, you can run:
 
