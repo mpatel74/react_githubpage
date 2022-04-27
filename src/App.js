@@ -22,14 +22,13 @@ function App() {
 
 
   useEffect(()=>{
-    console.log("use effect called");
-    fetch(`https://api.github.com/users/example`)
+    fetch(`https://api.github.com/users/mpatel74`)
         .then(res => res.json())
         .then(data=>{setData(data);});
   },[]);
 
   useEffect( ()=>{
-    fetch(`https://api.github.com/users/example/repos`)
+    fetch(`https://api.github.com/users/mpatel74/repos`)
         .then(response => response.json())
         .then(data => {
           setRepoItems(data);
@@ -55,7 +54,6 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("first fetch calling ");
     fetch(`https://api.github.com/users/${userInput}`)
         .then(res => res.json())
         .then(data =>{
@@ -68,14 +66,10 @@ function App() {
             setError(null);
           }
         })
-    console.log(repoUrl);
-    console.log("second fetch calling ");
     fetch(`https://api.github.com/users/${userInput}/repos`)
         .then(res => res.json())
         .then(data =>{setRepoItems(data);
         })
-    console.log(repoItems);
-    console.log("second fetch DONE ");
   }
 
   return (
